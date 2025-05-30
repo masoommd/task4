@@ -22,8 +22,8 @@ bookshelf/
 1. **Clone or download** this repo
 
    ```bash
-   git clone <your-fork-url> bookshelf
-   cd bookshelf
+   git clone https://github.com/masoommd/task4.git
+   cd task4
    ```
 2. **Open `index.html`** in any modern browser.
 3. **Test mobile mode**
