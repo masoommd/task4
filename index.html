@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf – Desktop Edition</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- When you’re ready for mobile, link responsive.css AFTER style.css -->
+  <!-- <link rel="stylesheet" href="responsive.css"> -->
+</head>
+<body>
+  <!-- ====== Header ====== -->
+  <header>
+  <div class="logo">📚 Bookshelf</div>
+
+  <!-- 💡 1. the hidden checkbox that switches the menu on/off -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+  <!-- 💡 2. the hamburger icon -->
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span></span><span></span><span></span>
+  </label>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Genres</a></li>
+      <li><a href="#">Latest PDFs</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- ====== Hero Section with 4 Cards ====== -->
+  <section class="hero">
+    <h1>Discover Your Next Read</h1>
+    <div class="cards-row">
+      <!-- Card 1 -->
+      <article class="card">
+        <h2>The Silent Patient</h2>
+        <p class="author">by Alex Michaelides</p>
+        <p class="desc">
+          A shocking psychological thriller of a woman’s act of violence
+          against her husband—and the therapist obsessed with uncovering her motive.
+        </p>
+        <a href="#" class="btn">Read PDF</a>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card">
+        <h2>Atomic Habits</h2>
+        <p class="author">by James Clear</p>
+        <p class="desc">
+          Tiny changes, remarkable results. Learn how small habits can lead to
+          life-changing outcomes in work and life.
+        </p>
+        <a href="#" class="btn">Read PDF</a>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card">
+        <h2>Educated</h2>
+        <p class="author">by Tara Westover</p>
+        <p class="desc">
+          A memoir about a girl who, kept out of school, leaves her survivalist
+          family and earns a PhD from Cambridge University.
+        </p>
+        <a href="#" class="btn">Read PDF</a>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card">
+        <h2>Dune</h2>
+        <p class="author">by Frank Herbert</p>
+        <p class="desc">
+          The epic science-fiction classic of Paul Atreides and the desert planet Arrakis.
+        </p>
+        <a href="#" class="btn">Read PDF</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- (More sections could go here) -->
+
+  <!-- ====== Footer ====== -->
+  <footer>
+    © 2025 Bookshelf. All PDFs are for demonstration purposes only.
+  </footer>
+</body>
+</html>

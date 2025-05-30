@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f7f7f7;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    background: #263238;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero {
+    padding: 40px;
+    background: #fafafa;
+}
+
+.hero h1 {
+    margin-top: 0;
+    font-size: 36px;
+    margin-bottom: 32px;
+    color: #263238;
+}
+
+.cards-row {
+    display: flex;
+    gap: 24px;
+}
+
+.card {
+    width: 300px;
+    background: #fff;
+    padding: 24px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    font-size: 22px;
+    margin: 0 0 8px;
+}
+
+.author {
+    margin: 0 0 12px;
+    font-style: italic;
+    color: #555;
+}
+
+.desc {
+    flex: 1;
+    line-height: 1.5;
+    color: #333;
+}
+
+.btn {
+    align-self: flex-start;
+    padding: 8px 16px;
+    background: #ff7043;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+footer {
+    background: #263238;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    /* pushes it away from content */
+}
+
+/*  ╔══════════════════════════════════════════════╗
+    ║  MOBILE VIEW — max-width 768 px              ║
+    ╚══════════════════════════════════════════════╝ */
+@media (max-width: 768px) {
+
+    /* Prevent sideways scroll & use full width canvas */
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main,
+    .wrapper {
+        flex: 1 0 auto;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-toggle-label {
+        /* three bars */
+        display: inline-block;
+        cursor: pointer;
+        margin-left: auto;
+        padding: 8px 6px;
+    }
+
+    .nav-toggle-label span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background: #fff;
+        margin: 4px 0;
+        transition: 0.3s;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #nav-toggle:checked+.nav-toggle-label+nav ul {
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        background: #37474f;
+        border-bottom: 1px solid #455a64;
+        font-size: 17px;
+    }
+
+    .hero {
+        padding: 20px 12px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .cards-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 18px;
+        box-sizing: border-box;
+    }
+
+    .card h2 {
+        font-size: 22px;
+    }
+
+    .author {
+        font-size: 16px;
+    }
+
+    .desc {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 22px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: block;
+    }
+
+    footer {
+        font-size: 15px;
+        padding: 18px 12px;
+        margin-top: auto;
+        text-align: center;
+    }
+}
